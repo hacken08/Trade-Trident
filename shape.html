@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Background Shape with Arrow</title>
+<style>
+  .background-shape {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #000;
+    transform: translateY(-50%);
+  }
+</style>
+</head>
+<body>
+<div class="background-shape">
+  <div class="arrow"></div>
+</div>
+</body>
+</html>

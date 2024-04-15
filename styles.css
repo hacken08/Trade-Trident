@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --color: #1C5CFF;
+    --af_top: 100%;
+    --af_border: 100%
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ==================== Nav Bar ==================== */
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    padding: 20px 120px;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1)
+        /* Adjusted for a lighter shadow */
+}
+
+#logo {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+
+nav h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 53px;
+    margin: auto;
+    list-style: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav button {
+    padding: 9px 26px;
+    ;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 82px;
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease 0s;
+}
+
+
+nav button::after {
+    content: "";
+    padding: 2px;
+    left: -1px;
+    top: var(--af_top);
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    position: absolute;
+    border-radius: var(--af_border);
+    transition: all ease 0.4s;
+}
+
+
+nav button:hover {
+    --af_top: -2px;
+    --af_border: 0%;
+    color: white;
+    border: 1px solid var(--color);
+}
+
+
+nav button span {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==================== App desing ==================== */
+#shape-1 {
+    position: absolute;
+    width: 298px;
+    top: 537px;
+    left: -79px;
+    z-index: -1;
+}
+
+#shape-2 {
+    position: absolute;
+    width: 179px;
+    top: 85px;
+    right: 0px;
+    z-index: -1;
+}
+
+.hero {
+    margin-bottom: -11px;
+    padding: 80px 102px;
+    width: inherit;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tagline {
+    width: 600px;
+    margin-left: 80px;
+    margin-bottom: 140px;
+    font-weight: 700;
+    font-size: 49px;
+}
+
+#mobile-frames {
+    position: relative;
+    left: -91px;
+}
+
+
+#frm-content {
+    position: relative;
+    width: 240px;
+    right: 11px;
+    z-index: 1;
+    bottom: 20px;
+    left: 0px;
+    transform: rotate(-4deg);
+}
+
+#frm-content2 {
+    /* height:20px; */
+    position: relative;
+    width: 240px;
+    transform: rotate(2deg);
+}
+
+
+
+/* ============================ Why choose us ============================ */
+#hero2 {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 0px;
+}
+
+
+#row1 {
+    display: flex;
+}
+
+#row2 {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.info-container {
+    margin: 12px;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-container aside {
+    font-size: 90px;
+    margin: 18px 17px 18px 48px;
+    background-image: linear-gradient(to right, #62d5ff, var(--color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head-details {
+    margin: 10px;
+}
+
+.info-container h3 {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.head-details p {
+    width: 30vw;
+    font-size: 15px;
+}
+
+
+/* ============================ price ============================ */
+#price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: inherit;
+
+}
+
+#price h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#planContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.planBox {
+    margin: 12px;
+    padding: 26px 43px;
+    width: 256px;
+    height: 480px;
+    position: relative;
+    background-image: linear-gradient(to right, white, white);
+    color: black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 3px 15px rgba(0, 0, 0, 0.15);
+    transition: all ease 0.3s;
+}
+
+.planBox h1 {
+    font-size: 32px
+}
+
+.plan-descripe {
+    width: 286px;
+    font-weight: 500;
+}
+
+.planBox h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.planBox ul {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.planBox ul li {
+    font-weight: 500;
+}
+
+.recom {
+    width: 256px;
+    height: 520px;
+    background-image: linear-gradient(to right, #62d5ff, var(--color));
+    color: white;
+    position: relative;
+}
+
+#recomBox {
+    background-color: rgb(255, 0, 102);
+    border-radius: 23px;
+    width: 9em;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    position: absolute;
+    top: -13px;
+    left: 110px;
+}
+
+.recom h1 {
+    padding-top: 20px
+}
+
+.buyBtn {
+    padding: 14px 31px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right, #62d5ff, var(--color)); */
+    background-color: white;
+    border: 0px solid var(--color);
+    color: black;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 0.3s;
+
+}
+
+
+.buyBtn span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.buyBtn:hover {
+    --af_top: -5px;
+    --af_border: 0px;
+    --invert: 1;
+    color: black;
+}
+
+.buyBtn::after {
+    content: "";
+    padding: 2px;
+    left: -1px;
+    top: var(--af_top);
+    width: 100%;
+    height: 140px;
+    background-image: linear-gradient(to right, #fffc63, #fa2998);
+    position: absolute;
+    border-radius: var(--af_border);
+    transition: all ease 0.4s;
+}
+
+
+/* --------------------- Courses  --------------------- */
+
+#hero3 {
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#courseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.container {
+    width: 273px;
+    border-radius: 20px;
+    margin: 6px 12px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.container>div {
+    margin: 20px 25px;
+    margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.course-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: grey;
+}
+
+.total-hours {
+    margin-bottom: 9px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #5a5affc7;
+}
+
+
+/* ----------------- disclaimer ----------------- */
+
+#hero4 {
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.disclaimer-container {
+    padding: 20px 0px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #676767;
+    text-align: center;
+    width: 63vw;
+}
+
+.disclaimer-text {
+    margin: 0;
+}
+
+
+
+
+/* ----------------- footer ---------------- */
+footer {
+    width: 66vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 12px;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 11px;
+}
+
+footer img {
+    width: 20px;
+    margin-right: 12px;
+}
